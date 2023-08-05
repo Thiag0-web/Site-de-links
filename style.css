@@ -1,0 +1,28 @@
+@charset "UTF-8";
+ 
+
+:root{
+    --cor00:#3C5057;
+    --cor01:#56BEDD;
+    --cor02:#93C6D6;
+    --cor03:#224A57;
+    --cor04:#7197A3;
+}
+body{
+    background-color: var(--cor03); 
+    text-decoration: none;
+}
+header{
+    background-image:linear-gradient(var(--cor02),var(--cor01));
+    border-radius: 50px;
+    text-align: center;
+    
+}
+header p{
+    padding-bottom: 15px;
+}
+main{
+    margin-left: 50px;
+    text-decoration: none;
+    
+}
