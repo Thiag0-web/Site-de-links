@@ -1,6 +1,4 @@
 @charset "UTF-8";
- 
-
 :root{
     --cor00:#3C5057;
     --cor01:#56BEDD;
@@ -10,19 +8,36 @@
 }
 body{
     background-color: var(--cor03); 
-    text-decoration: none;
 }
 header{
     background-image:linear-gradient(var(--cor02),var(--cor01));
     border-radius: 50px;
     text-align: center;
+    box-shadow: 8px 7px 9px rgba(0, 0, 0, 0.315);
     
 }
 header p{
     padding-bottom: 15px;
 }
 main{
-    margin-left: 50px;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+main a {
     text-decoration: none;
-    
+}
+div{
+    background-color:var(--cor02);
+    border-radius: 10px;
+    box-shadow: 8px 7px 9px rgba(0, 0, 0, 0.315);
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 30px;
+}
+div img{
+    width: 80px;
+    height: 80px;
 }
