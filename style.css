@@ -1,20 +1,36 @@
 @charset "UTF-8";
-:root{
-    --cor00:#3C5057;
-    --cor01:#56BEDD;
-    --cor02:#93C6D6;
-    --cor03:#224A57;
-    --cor04:#7197A3;
+
+/* Variáveis de cores */
+:root {
+    --cor00: #3C5057;
+    --cor01: #56BEDD;
+    --cor02: #93C6D6;
+    --cor03: #224A57;
+    --cor04: #7197A3;
 }
-*{
+
+/* Reset de margin e border para todos os elementos */
+* {
     margin: 0;
     border: 0;
 }
 
-body{
-    background-color: var(--cor03); 
+/* Estilos gerais */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor03);
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+}
+
+/* Links e textos */
+a {
+    text-decoration: none;
 }
 
 a > p {
@@ -23,35 +39,47 @@ a > p {
     text-decoration: none;
     border: 1px solid var(--cor03);
 }
-a > p:active{
+
+a > p:active {
     color: var(--cor03);
 }
-h2{
+
+/* Títulos */
+h2 {
     color: var(--cor03);
 }
-header{
+
+footer h3 {
+    margin: 0;
+    color: black;
+    font-size: 1em;
+}
+
+/* Header */
+header {
     margin: 10px;
     padding: 10px;
-    background-image:linear-gradient(var(--cor02),var(--cor01));
+    background-image: linear-gradient(var(--cor02), var(--cor01));
     border-radius: 50px;
     text-align: center;
     box-shadow: 8px 7px 9px rgba(0, 0, 0, 0.315);
 }
-header p{
+
+header p {
     padding-bottom: 15px;
 }
-main{
-    display: flex; 
+
+/* Main */
+main {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-main a {
-    text-decoration: none;
-    
-}
-div{
-    background-color:var(--cor02);
+
+/* Divs dentro do main */
+div {
+    background-color: var(--cor02);
     border-radius: 10px;
     box-shadow: 8px 7px 9px rgba(0, 0, 0, 0.315);
     width: 250px;
@@ -60,12 +88,12 @@ div{
     margin: 30px;
 }
 
-div h2{
+div h2 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-div img{
+div img {
     display: block;
     flex-direction: row;
     justify-content: center;
@@ -73,27 +101,22 @@ div img{
     border-radius: 10px;
     width: 80px;
     height: 80px;
-    margin: auto; 
+    margin: auto;
 }
+
 div a > p {
-    display: inline-block; 
+    display: inline-block;
     padding: 5px;
-    margin-top: 30px; 
+    margin-top: 30px;
     border-radius: 10px;
     padding: 10px;
 }
 
-footer{
+/* Footer */
+footer {
     background-color: var(--cor00);
     text-align: center;
     padding: 10px;
-    display: block;
-}
-footer h3 {
-    margin: 0;
-    color: var(black);
-    font-size: 1em;
-}
-footer p{
-    font-size: .8em;
+    margin-top: auto;
+    width: 100%;
 }
